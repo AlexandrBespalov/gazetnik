@@ -21,6 +21,4 @@ public class SaleService {
     public List<Sale> getSalesByProductId(int productId) throws SQLException {
         return saleDAO.getSalesByProductId(productId);
     }
-
-    // Другие методы сервиса для работы с продажами
 }

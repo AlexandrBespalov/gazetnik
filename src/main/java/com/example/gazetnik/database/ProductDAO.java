@@ -52,6 +52,4 @@ public class ProductDAO {
             preparedStatement.executeUpdate();
         }
     }
-
-    // Другие методы для работы с продуктами
 }

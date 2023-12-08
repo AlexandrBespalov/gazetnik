@@ -43,6 +43,4 @@ public class SaleDAO {
         }
         return sales;
     }
-
-    // Другие методы для работы с продажами
 }

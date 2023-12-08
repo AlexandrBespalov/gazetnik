@@ -24,6 +24,4 @@ public class ProductService {
     public void updateProduct(Product product) throws SQLException {
         productDAO.updateProduct(product);
     }
-
-    // Другие методы сервиса для работы с продуктами
 }

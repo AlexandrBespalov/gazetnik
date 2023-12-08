@@ -4,6 +4,7 @@ import com.example.gazetnik.model.Product;
 import com.example.gazetnik.model.Sale;
 import com.example.gazetnik.service.ProductService;
 import com.example.gazetnik.service.SaleService;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
@@ -51,6 +52,7 @@ public class MainController {
         }
     }
 
+    @FXML
     private void addProduct() {
         String productName = productNameField.getText();
         int quantity = Integer.parseInt(quantityField.getText());
@@ -80,5 +82,8 @@ public class MainController {
             List<Sale> sales = saleService.getSalesByProductId(selectedProductId);
             salesList.getItems().setAll(sales);
         }
+    }
+
+    public void onHelloButtonClick(ActionEvent actionEvent) {
     }
 }
